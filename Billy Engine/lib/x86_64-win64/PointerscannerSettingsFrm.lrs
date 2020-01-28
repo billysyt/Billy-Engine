@@ -1,0 +1,503 @@
+LazarusResources.Add('TfrmPointerScannerSettings','FORMDATA',[
+  'TPF0'#26'TfrmPointerScannerSettings'#25'frmPointerScannerSettings'#4'Left'#3
+  +'S'#2#6'Height'#3#11#2#3'Top'#3#207#0#5'Width'#3#170#2#8'AutoSize'#9#11'Bord'
+  +'erStyle'#7#8'bsSingle'#7'Caption'#6#26'Pointerscanner scanoptions'#12'Clien'
+  +'tHeight'#3#11#2#11'ClientWidth'#3#170#2#8'OnCreate'#7#10'FormCreate'#9'OnDe'
+  +'stroy'#7#11'FormDestroy'#6'OnShow'#7#8'FormShow'#8'Position'#7#14'poScreenC'
+  +'enter'#10'LCLVersion'#6#7'1.4.4.0'#0#9'TComboBox'#11'cbValueType'#22'Anchor'
+  +'SideLeft.Control'#7#9'cbAddress'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21
+  +'AnchorSideTop.Control'#7#9'cbAddress'#23'AnchorSideRight.Control'#7#5'Owner'
+  +#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#3'+'#2#6'Height'#2#23#3'Top'
+  +#2'+'#5'Width'#2'|'#7'Anchors'#11#5'akTop'#7'akRight'#0#19'BorderSpacing.Rig'
+  +'ht'#2#3#10'ItemHeight'#2#15#9'ItemIndex'#2#0#13'Items.Strings'#1#6#6'4 Byte'
+  +#6#5'Float'#6#6'Double'#0#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#0#4'Te'
+  +'xt'#6#6'4 Byte'#0#0#6'TPanel'#6'Panel2'#22'AnchorSideLeft.Control'#7#5'Owne'
+  +'r'#21'AnchorSideTop.Control'#7#5'Owner'#4'Left'#2#8#6'Height'#2#23#3'Top'#2
+  +#0#5'Width'#3#189#1#8'AutoSize'#9#18'BorderSpacing.Left'#2#8#10'BevelOuter'#7
+  +#6'bvNone'#12'ClientHeight'#2#23#11'ClientWidth'#3#189#1#8'TabOrder'#2#1#0#12
+  +'TRadioButton'#13'rbFindAddress'#22'AnchorSideLeft.Control'#7#6'Panel2'#21'A'
+  +'nchorSideTop.Control'#7#6'Panel2'#4'Left'#2#0#6'Height'#2#19#3'Top'#2#4#5'W'
+  +'idth'#2'q'#17'BorderSpacing.Top'#2#4#7'Caption'#6#16'Scan for address'#7'Ch'
+  +'ecked'#9#8'OnChange'#7#16'rbFindValueClick'#8'TabOrder'#2#0#7'TabStop'#9#0#0
+  +#12'TRadioButton'#11'rbFindValue'#22'AnchorSideLeft.Control'#7#13'rbFindAddr'
+  +'ess'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#13
+  +'rbFindAddress'#4'Left'#2't'#6'Height'#2#19#3'Top'#2#4#5'Width'#3#184#0#18'B'
+  +'orderSpacing.Left'#2#3#7'Caption'#6#29'Scan for addresses with value'#8'OnC'
+  +'hange'#7#16'rbFindValueClick'#8'TabOrder'#2#1#0#0#12'TRadioButton'#20'rbGen'
+  +'eratePointermap'#22'AnchorSideLeft.Control'#7#11'rbFindValue'#19'AnchorSide'
+  +'Left.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#11'rbFindValue'#4'Lef'
+  +'t'#3'/'#1#6'Height'#2#19#3'Top'#2#4#5'Width'#3#142#0#18'BorderSpacing.Left'
+  +#2#3#7'Caption'#6#19'Generate pointermap'#8'OnChange'#7#16'rbFindValueClick'
+  +#8'TabOrder'#2#2#0#0#0#9'TCheckBox'#21'cbUseLoadedPointermap'#22'AnchorSideL'
+  +'eft.Control'#7#6'Panel2'#21'AnchorSideTop.Control'#7#6'Panel2'#18'AnchorSid'
+  +'eTop.Side'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2#19#4'Hint'#6#219'Use this'
+  +' if you have created a pointermap on a system that runs the game, but you w'
+  +'ish to do the scan on another system (or multiple systems).'#13#10'Checking'
+  +' this option will open a dialog where you can select the pointermap'#3'Top'
+  +#2#24#5'Width'#3#147#0#17'BorderSpacing.Top'#2#1#7'Caption'#6#20'Use saved p'
+  +'ointermap'#8'OnChange'#7#27'cbUseLoadedPointermapChange'#14'ParentShowHint'
+  +#8#8'ShowHint'#9#8'TabOrder'#2#2#0#0#9'TCheckBox'#27'cbCompareToOtherPointer'
+  +'maps'#22'AnchorSideLeft.Control'#7#6'Panel2'#21'AnchorSideTop.Control'#7#9
+  +'cbAddress'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2#19
+  +#4'Hint'#12#21#1#0#0'When ticked you can add other pointermaps which will be'
+  +' used to verify that the pointers it finds are correct. You will have to fi'
+  +'ll in the correct address for each pointermap you provide.'#13#10'Note: exp'
+  +'ect at least the size of the game itself in memory for every pointermap use'
+  +'d'#13#10#3'Top'#2'C'#5'Width'#3'!'#1#17'BorderSpacing.Top'#2#1#7'Caption'#6
+  +'.Compare results with other saved pointermap(s)'#8'OnChange'#7'!cbCompareTo'
+  +'OtherPointermapsChange'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#3#0
+  +#0#9'TCheckBox'#21'cbShowAdvancedOptions'#22'AnchorSideLeft.Control'#7#27'cb'
+  +'CompareToOtherPointermaps'#21'AnchorSideTop.Control'#7#27'cbCompareToOtherP'
+  +'ointermaps'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2#19
+  +#3'Top'#2'Z'#5'Width'#3#156#0#17'BorderSpacing.Top'#2#4#7'Caption'#6#21'Show'
+  +' advanced options'#8'OnChange'#7#27'cbShowAdvancedOptionsChange'#8'TabOrder'
+  +#2#4#0#0#6'TPanel'#6'Panel3'#22'AnchorSideLeft.Control'#7#6'Panel2'#21'Ancho'
+  +'rSideTop.Control'#7#21'cbShowAdvancedOptions'#18'AnchorSideTop.Side'#7#9'as'
+  +'rBottom'#4'Left'#2#8#6'Height'#3#202#0#3'Top'#2'n'#5'Width'#3#199#2#8'AutoS'
+  +'ize'#9#17'BorderSpacing.Top'#2#1#10'BevelOuter'#7#6'bvNone'#11'BorderStyle'
+  +#7#8'bsSingle'#12'ClientHeight'#3#198#0#11'ClientWidth'#3#195#2#5'Color'#7#8
+  +'clWindow'#11'ParentColor'#8#8'TabOrder'#2#5#7'Visible'#8#0#6'TPanel'#6'Pane'
+  +'l4'#22'AnchorSideLeft.Control'#7#6'Panel3'#21'AnchorSideTop.Control'#7#6'Pa'
+  +'nel3'#4'Left'#2#0#6'Height'#3#195#0#3'Top'#2#0#5'Width'#3'='#1#8'AutoSize'#9
+  +#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3#195#0#11'ClientWidth'#3'='#1#8
+  +'TabOrder'#2#0#0#9'TCheckBox'#22'cbIncludeSystemModules'#22'AnchorSideLeft.C'
+  +'ontrol'#7#10'CbAlligned'#21'AnchorSideTop.Control'#7#10'cbHeapOnly'#18'Anch'
+  +'orSideTop.Side'#7#9'asrBottom'#4'Left'#2#7#6'Height'#2#19#3'Top'#3#176#0#5
+  ,'Width'#3#154#0#7'Caption'#6#22'Include system modules'#8'TabOrder'#2#0#0#0#9
+  +'TCheckBox'#10'cbHeapOnly'#22'AnchorSideLeft.Control'#7#13'cbUseHeapData'#21
+  +'AnchorSideTop.Control'#7#13'cbUseHeapData'#18'AnchorSideTop.Side'#7#9'asrBo'
+  +'ttom'#4'Left'#2#23#6'Height'#2#19#4'Hint'#6'RIf the address you search for '
+  +'isn''t a heap address, the scan will return 0 results'#3'Top'#3#157#0#5'Wid'
+  +'th'#3'"'#1#18'BorderSpacing.Left'#2#16#7'Caption'#6'0Only allow static and '
+  +'heap addresses in the path'#7'Enabled'#8#7'OnClick'#7#15'cbHeapOnlyClick'#14
+  +'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#1#0#0#9'TCheckBox'#13'cbUseHe'
+  +'apData'#22'AnchorSideLeft.Control'#7#10'CbAlligned'#21'AnchorSideTop.Contro'
+  +'l'#7#6'Panel5'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#7#6'Height'#2
+  +#19#4'Hint'#12'N'#1#0#0'When this is checked the heap is used to figure out '
+  +'the offset sizes, instead of blindly guessing them.'#13#10'pro: Greatly imp'
+  +'rove speed and a lot less useless results'#13#10'con: if the game allocates'
+  +' gigantic chunks of heap memory, and then divides it up itself, this will g'
+  +'ive wrong results.'#13#10#13#10'In other cases this will give perfect point'
+  +'ers '#3'Top'#3#138#0#5'Width'#3#22#1#7'Caption'#6'+Improve pointerscan with'
+  +' gathered heap data'#7'OnClick'#7#18'cbUseHeapDataClick'#14'ParentShowHint'
+  +#8#8'ShowHint'#9#8'TabOrder'#2#2#0#0#6'TLabel'#7'Label13'#22'AnchorSideLeft.'
+  +'Control'#7#10'CbAlligned'#21'AnchorSideTop.Control'#7#15'cbOnlyOneStatic'#18
+  +'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#7#6'Height'#2#15#3'Top'#2'L'#5
+  +'Width'#3#242#0#7'Caption'#6',Pointer path may only be inside this region:'
+  +#11'ParentColor'#8#0#0#9'TCheckBox'#15'cbOnlyOneStatic'#22'AnchorSideLeft.Co'
+  +'ntrol'#7#10'CbAlligned'#21'AnchorSideTop.Control'#7#12'cbNoReadOnly'#18'Anc'
+  +'horSideTop.Side'#7#9'asrBottom'#4'Left'#2#7#6'Height'#2#19#4'Hint'#6#230'Wh'
+  +'en the pointerscanner goes through the list of pointervalues with a specifi'
+  +'c value, this will stop exploring other paths as soon as it encounters a st'
+  +'atic pointer to that value'#13#10#13#10'pro: Fast'#13#10'con: You may miss '
+  +'some valid results '#3'Top'#2'9'#5'Width'#3'6'#1#7'Caption'#6'3Stop travers'
+  +'ing a path when a static has been found'#14'ParentShowHint'#8#8'ShowHint'#9
+  +#8'TabOrder'#2#3#0#0#9'TCheckBox'#12'cbNoReadOnly'#22'AnchorSideLeft.Control'
+  +#7#10'CbAlligned'#21'AnchorSideTop.Control'#7#12'cbStaticOnly'#18'AnchorSide'
+  +'Top.Side'#7#9'asrBottom'#4'Left'#2#7#6'Height'#2#19#4'Hint'#12'N'#1#0#0'Whe'
+  +'n checked the pointerscan will throw away memory that is readonly. So when '
+  +'it looks for paths, it won''t encounter paths that pass through read only m'
+  +'emory blocks.'#13#10#13#10'When it''s unchecked, it does include readonly m'
+  +'emory'#13#10#13#10#13#10'pro: faster, less useless results'#13#10'con: If t'
+  +'he game decides to mark a pointer as readonly ce won''t find it '#3'Top'#2
+  +'&'#5'Width'#3#10#1#7'Caption'#6'+Don''t include pointers with read-only nod'
+  +'es'#7'Checked'#9#8'OnChange'#7#11'canNotReuse'#14'ParentShowHint'#8#8'ShowH'
+  +'int'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#4#0#0#9'TCheckBox'#12'cbStatic'
+  +'Only'#22'AnchorSideLeft.Control'#7#10'CbAlligned'#21'AnchorSideTop.Control'
+  +#7#10'CbAlligned'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#7#6'Height'
+  +#2#19#4'Hint'#12'R'#1#0#0'When checked the pointerscan will only store a pat'
+  +'h when it starts with a static address. (or easily looked up address)'#13#10
+  +'When it''s disabled, it finds every single pointer path'#13#10#13#10'pro: F'
+  +'ast'#13#10'con: It may miss pointers that are accessed by special paths lik'
+  +'e thread local storage. (but even then they''d be useless for ce as they wi'
+  +'ll change)'#3'Top'#2#19#5'Width'#3#220#0#7'Caption'#6'%Only find paths with'
+  +' a static address'#7'Checked'#9#8'OnChange'#7#18'cbStaticOnlyChange'#14'Par'
+  +'entShowHint'#8#8'ShowHint'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#5#0#0#9
+  +'TCheckBox'#10'CbAlligned'#22'AnchorSideLeft.Control'#7#6'Panel4'#21'AnchorS'
+  +'ideTop.Control'#7#6'Panel4'#4'Left'#2#7#6'Height'#2#19#4'Hint'#6#229'When e'
+  +'nabled, only pointers that are stored in an address dividable by 4 are look'
+  +'ed at'#13#10'When disabled, it won''t bother.'#13#10#13#10'pro: Fast scans'
+  +#13#10'Con: On some horrible designed games that you shouldn''t even play it'
+  +' won''t find the paths'#3'Top'#2#0#5'Width'#3#211#0#18'BorderSpacing.Left'#2
+  +#7#7'Caption'#6'!Addresses must be 32-bit alligned'#7'Checked'#9#8'OnChange'
+  +#7#11'canNotReuse'#14'ParentShowHint'#8#8'ShowHint'#9#5'State'#7#9'cbChecked'
+  +#8'TabOrder'#2#6#0#0#6'TPanel'#6'Panel5'#22'AnchorSideLeft.Control'#7#7'Labe'
+  +'l13'#21'AnchorSideTop.Control'#7#7'Label13'#18'AnchorSideTop.Side'#7#9'asrB'
+  +'ottom'#4'Left'#2#7#6'Height'#2'/'#3'Top'#2'['#5'Width'#2'o'#8'AutoSize'#9#10
+  +'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'/'#11'ClientWidth'#2'o'#8'TabOrd'
+  +'er'#2#7#0#5'TEdit'#15'edtReverseStart'#21'AnchorSideTop.Control'#7#6'Panel5'
+  +#23'AnchorSideRight.Control'#7#6'Panel5'#20'AnchorSideRight.Side'#7#9'asrBot'
+  ,'tom'#4'Left'#2#31#6'Height'#2#23#3'Top'#2#0#5'Width'#2'P'#7'Anchors'#11#5'a'
+  +'kTop'#7'akRight'#0#8'CharCase'#7#11'ecUppercase'#9'MaxLength'#2#8#8'OnChang'
+  +'e'#7#11'canNotReuse'#8'TabOrder'#2#0#4'Text'#6#8'00000000'#0#0#6'TLabel'#7
+  +'Label10'#21'AnchorSideTop.Control'#7#15'edtReverseStart'#18'AnchorSideTop.S'
+  +'ide'#7#9'asrCenter'#23'AnchorSideRight.Control'#7#15'edtReverseStart'#4'Lef'
+  +'t'#2#0#6'Height'#2#15#3'Top'#2#4#5'Width'#2#29#7'Anchors'#11#5'akTop'#7'akR'
+  +'ight'#0#19'BorderSpacing.Right'#2#2#7'Caption'#6#4'From'#11'ParentColor'#8#0
+  +#0#5'TEdit'#14'edtReverseStop'#21'AnchorSideTop.Control'#7#15'edtReverseStar'
+  +'t'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#6'Pa'
+  +'nel5'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2#31#6'Height'#2#23#3
+  +'Top'#2#24#5'Width'#2'P'#7'Anchors'#11#5'akTop'#7'akRight'#0#17'BorderSpacin'
+  +'g.Top'#2#1#8'CharCase'#7#11'ecUppercase'#9'MaxLength'#2#8#8'OnChange'#7#11
+  +'canNotReuse'#8'TabOrder'#2#1#4'Text'#6#8'7FFFFFFF'#0#0#6'TLabel'#7'Label11'
+  +#21'AnchorSideTop.Control'#7#14'edtReverseStop'#18'AnchorSideTop.Side'#7#9'a'
+  +'srCenter'#23'AnchorSideRight.Control'#7#14'edtReverseStop'#4'Left'#2#13#6'H'
+  +'eight'#2#15#3'Top'#2#28#5'Width'#2#18#7'Anchors'#11#5'akTop'#7'akRight'#0#7
+  +'Caption'#6#3'To:'#11'ParentColor'#8#0#0#0#0#6'TPanel'#6'Panel6'#22'AnchorSi'
+  +'deLeft.Control'#7#6'Panel4'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'Ancho'
+  +'rSideTop.Control'#7#6'Panel4'#4'Left'#3'D'#1#6'Height'#3#198#0#3'Top'#2#0#5
+  +'Width'#3#127#1#8'AutoSize'#9#18'BorderSpacing.Left'#2#7#10'BevelOuter'#7#6
+  +'bvNone'#12'ClientHeight'#3#198#0#11'ClientWidth'#3#127#1#8'TabOrder'#2#1#0#9
+  +'TCheckBox'#23'cbAcceptNonModuleVtable'#22'AnchorSideLeft.Control'#7#19'cbCl'
+  +'assPointersOnly'#21'AnchorSideTop.Control'#7#19'cbClassPointersOnly'#18'Anc'
+  +'horSideTop.Side'#7#9'asrBottom'#4'Left'#2#16#6'Height'#2#19#3'Top'#2#19#5'W'
+  +'idth'#3#218#0#18'BorderSpacing.Left'#2#16#7'Caption'#6' Also accept non-mod'
+  +'ule addresses'#7'Enabled'#8#8'TabOrder'#2#0#0#0#9'TCheckBox'#19'cbClassPoin'
+  +'tersOnly'#22'AnchorSideLeft.Control'#7#6'Panel6'#21'AnchorSideTop.Control'#7
+  +#6'Panel6'#4'Left'#2#0#6'Height'#2#19#4'Hint'#12#137#1#0#0'Object oriented p'
+  +'rogramming languages tend to implement classobjects by having a pointer in '
+  +'the first element to something that describes the class'#13#10'With this op'
+  +'tion enabled, ce will check if it''s a classobject by checking that rule. I'
+  +'f not, it won''t see it as a pointer.'#13#10'pro:Tremendous speed increase '
+  +'and almost perfect pointers'#13#10'con:Doesn''t work with runtime generated'
+  +' classes (java, .net) '#3'Top'#2#0#5'Width'#3't'#1#7'Caption'#6'@First elem'
+  +'ent of pointerstruct must point to module (e.g vtable)'#8'OnChange'#7#11'ca'
+  +'nNotReuse'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#1#0#0#9'TCheckB'
+  +'ox'#8'cbNoLoop'#22'AnchorSideLeft.Control'#7#6'Panel6'#21'AnchorSideTop.Con'
+  +'trol'#7#23'cbAcceptNonModuleVtable'#18'AnchorSideTop.Side'#7#9'asrBottom'#4
+  +'Left'#2#0#6'Height'#2#19#4'Hint'#12'O'#1#0#0'This will filter out pointerpa'
+  +'ths that ended up in a loop'#13#10'e.g:'#13#10'base->p1->p2->p3->p1->p4'#13
+  +#10#13#10'you could just as well do base->p1->p4 then, so throw this one awa'
+  +'y (base->p1->p4 will be found another way)'#13#10#13#10'pro: Less results s'
+  +'o less diskspace used'#13#10'con: slightly slows down the scan as it needs '
+  +'to check for loops every single iteration '#3'Top'#2'&'#5'Width'#3#135#0#7
+  +'Caption'#6#19'No looping pointers'#7'Checked'#9#14'ParentShowHint'#8#8'Show'
+  +'Hint'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#2#0#0#9'TCheckBox'#14'cbStati'
+  +'cStacks'#22'AnchorSideLeft.Control'#7#6'Panel6'#21'AnchorSideTop.Control'#7
+  +#8'cbNoLoop'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#2#19
+  +#4'Hint'#12#169#2#0#0'This allows the stack of threads to be seen as static '
+  +'addresses by the pointerscan.'#13#10'The main thread is always a sure bet t'
+  +'hat it''s the first one in the list. And often the second thread created is'
+  +' pretty stable as well.'#13#10'With more there''s a bigger change they get '
+  +'created and destroyed randomly'#13#10#13#10'When a program enters a functio'
+  +'n and exits it, the stack pointer decreases and increases, and the data the'
+  +'re gets written to.'#13#10'The farther the game is inside function calls, t'
+  +'he more static the older data will be.'#13#10#13#10'With max stack offset: '
+  +'you can set the max size that can be deemed as static enough.'#13#10#13#10
+  +'pro: It finds paths otherwise never found'#13#10'con: More results, more di'
+  +'skspace '#3'Top'#2'9'#5'Width'#3#127#1#7'Caption'#6'DAllow stack addresses '
+  +'of the first thread(s) to be handled as static'#7'Checked'#9#8'OnChange'#7
+  +#20'cbStaticStacksChange'#14'ParentShowHint'#8#8'ShowHint'#9#5'State'#7#9'cb'
+  +'Checked'#8'TabOrder'#2#3#0#0#6'TLabel'#23'lblNumberOfStackThreads'#22'Ancho'
+  +'rSideLeft.Control'#7#14'cbStaticStacks'#21'AnchorSideTop.Control'#7#15'edtT'
+  +'hreadStacks'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Left'#2#16#6'Height'#2
+  ,#15#3'Top'#2'P'#5'Width'#3#235#0#18'BorderSpacing.Left'#2#16#7'Caption'#6'(N'
+  +'umber of threads from oldest to newest:'#11'ParentColor'#8#0#0#5'TEdit'#15
+  +'edtThreadStacks'#22'AnchorSideLeft.Control'#7#23'lblNumberOfStackThreads'#19
+  +'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#14'cbStatic'
+  +'Stacks'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#3#251#0#6'Height'#2#23
+  +#4'Hint'#12#152#1#0#0'Fill in the total number of threads that should be all'
+  +'owed to be used as a stack lookup.'#13#10'Thread 1 is usually the main thre'
+  +'ad of the game, but if that one spawns another thread for game related even'
+  +'ts, you might want to have that secondary thread as well.'#13#10'More threa'
+  +'ds is not recommend as they may get created and destroyed on the fly, and a'
+  +'re therefore useless as a lookup base, but it depends on the game.'#3'Top'#2
+  +'L'#5'Width'#2#24#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#4#4'Text'
+  +#6#1'2'#0#0#5'TEdit'#12'edtStackSize'#22'AnchorSideLeft.Control'#7#12'lblSta'
+  +'ckSize'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7
+  +#15'edtThreadStacks'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#3#14#1#6
+  +'Height'#2#23#3'Top'#2'c'#5'Width'#2'P'#8'TabOrder'#2#5#4'Text'#6#4'4096'#0#0
+  +#6'TLabel'#12'lblStackSize'#22'AnchorSideLeft.Control'#7#23'lblNumberOfStack'
+  +'Threads'#21'AnchorSideTop.Control'#7#12'edtStackSize'#18'AnchorSideTop.Side'
+  +#7#9'asrCenter'#4'Left'#2#16#6'Height'#2#15#3'Top'#2'g'#5'Width'#3#254#0#7'C'
+  +'aption'#6'+Max stackoffset to be deemed static enough:'#11'ParentColor'#8#0
+  +#0#9'TCheckBox'#11'cbStackOnly'#22'AnchorSideLeft.Control'#7#12'lblStackSize'
+  +#21'AnchorSideTop.Control'#7#12'edtStackSize'#18'AnchorSideTop.Side'#7#9'asr'
+  +'Bottom'#4'Left'#2#16#6'Height'#2#19#4'Hint'#12#31#1#0#0'Enable this if you '
+  +'wish to only find pointer paths with a stack address.'#13#10'Combine this w'
+  +'ith "Only find paths with a static address" (default on) else this option w'
+  +'ill have no effect'#13#10#13#10'pro: You''ll only get paths from the stack'
+  +#13#10'con: You don''t get get paths from random dll''s or the .exe '#3'Top'
+  +#2'z'#5'Width'#3#239#0#7'Caption'#6'&Stack addresses as ONLY static address'
+  +#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#6#0#0#9'TCheckBox'#23'cbLi'
+  +'mitScanToRegionFile'#22'AnchorSideLeft.Control'#7#6'Panel6'#21'AnchorSideTo'
+  +'p.Control'#7#11'cbStackOnly'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2
+  +#0#6'Height'#2#19#3'Top'#3#141#0#5'Width'#3#204#0#7'Caption'#6'#Limit scan t'
+  +'o specified region file'#8'OnChange'#7#29'cbLimitScanToRegionFileChange'#8
+  +'TabOrder'#2#7#0#0#9'TCheckBox'#27'cbCompressedPointerscanFile'#22'AnchorSid'
+  +'eLeft.Control'#7#6'Panel6'#21'AnchorSideTop.Control'#7#17'cbNegativeOffsets'
+  +#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#2#19#4'Hint'#12
+  +''''#1#0#0'Compresses the generated .PTR files slightly so they take less sp'
+  +'ace on the disk and less time writing to disk.'#13#10'Most of the time the '
+  +'bottleneck of a pointerscan is disk writing, so it is recommended to use th'
+  +'is option.'#13#10#13#10'Compressed .PTR files can not be read out by older '
+  +'Billy Engine versions'#3'Top'#3#179#0#5'Width'#3#180#0#7'Caption'#6#27'Comp'
+  +'ressed pointerscan file'#7'Checked'#9#14'ParentShowHint'#8#8'ShowHint'#9#5
+  +'State'#7#9'cbChecked'#8'TabOrder'#2#8#0#0#9'TCheckBox'#17'cbNegativeOffsets'
+  +#22'AnchorSideLeft.Control'#7#6'Panel6'#21'AnchorSideTop.Control'#7#23'cbLim'
+  +'itScanToRegionFile'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#0#6'Hei'
+  +'ght'#2#19#4'Hint'#6'eLet''s you scan for negative offsets'#13#10'Can not be'
+  +' used in combination with compressed pointerscan files'#3'Top'#3#160#0#5'Wi'
+  +'dth'#3#183#0#7'Caption'#6#30'Also scan for negative offsets'#8'OnChange'#7
+  +#23'cbNegativeOffsetsChange'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2
+  +#9#0#0#0#0#9'TComboBox'#9'cbAddress'#22'AnchorSideLeft.Control'#7#6'Panel2'
+  +#21'AnchorSideTop.Control'#7#21'cbUseLoadedPointermap'#18'AnchorSideTop.Side'
+  +#7#9'asrBottom'#23'AnchorSideRight.Control'#7#11'cbValueType'#4'Left'#2#8#6
+  +'Height'#2#23#3'Top'#2'+'#5'Width'#3#31#2#7'Anchors'#11#5'akTop'#6'akLeft'#7
+  +'akRight'#0#19'BorderSpacing.Right'#2#4#13'DropDownCount'#2#0#10'ItemHeight'
+  +#2#15#8'OnChange'#7#16'edtAddressChange'#10'OnDrawItem'#7#17'cbAddressDrawIt'
+  +'em'#8'TabOrder'#2#6#0#0#6'TPanel'#6'Panel1'#22'AnchorSideLeft.Control'#7#5
+  +'Owner'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#6
+  +'Panel9'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#3#170#0#6'Height'#2'V'
+  +#3'Top'#3#175#1#5'Width'#3'V'#1#8'AutoSize'#9#17'BorderSpacing.Top'#2#8#20'B'
+  +'orderSpacing.Bottom'#2#4#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'V'#11
+  +'ClientWidth'#3'V'#1#20'Constraints.MinWidth'#3'J'#1#11'ParentColor'#8#8'Tab'
+  +'Order'#2#7#7'OnClick'#7#11'Panel1Click'#0#6'TPanel'#6'Panel8'#22'AnchorSide'
+  +'Left.Control'#7#6'Panel1'#21'AnchorSideTop.Control'#7#6'Panel1'#4'Left'#2#0
+  +#6'Height'#2'V'#3'Top'#2#0#5'Width'#3#190#0#8'AutoSize'#9#10'BevelOuter'#7#6
+  ,'bvNone'#12'ClientHeight'#2'V'#11'ClientWidth'#3#190#0#8'TabOrder'#2#0#0#6'T'
+  +'Label'#6'Label9'#21'AnchorSideTop.Control'#7#14'edtThreadcount'#18'AnchorSi'
+  +'deTop.Side'#7#9'asrCenter'#23'AnchorSideRight.Control'#7#14'edtThreadcount'
+  +#4'Left'#2#0#6'Height'#2#15#3'Top'#2#4#5'Width'#3#130#0#7'Anchors'#11#5'akTo'
+  +'p'#7'akRight'#0#7'Caption'#6#23'Nr of threads scanning:'#11'ParentColor'#8#0
+  +#0#5'TEdit'#14'edtThreadcount'#21'AnchorSideTop.Control'#7#6'Panel8'#23'Anch'
+  +'orSideRight.Control'#7#6'Panel8'#20'AnchorSideRight.Side'#7#9'asrBottom'#4
+  +'Left'#3#130#0#6'Height'#2#23#3'Top'#2#0#5'Width'#2'<'#7'Anchors'#11#5'akTop'
+  +#7'akRight'#0#8'TabOrder'#2#0#4'Text'#6#1'2'#0#0#5'TEdit'#14'editStructsize'
+  +#21'AnchorSideTop.Control'#7#14'edtThreadcount'#18'AnchorSideTop.Side'#7#9'a'
+  +'srBottom'#23'AnchorSideRight.Control'#7#6'Panel8'#20'AnchorSideRight.Side'#7
+  +#9'asrBottom'#4'Left'#3#130#0#6'Height'#2#23#3'Top'#2'!'#5'Width'#2'<'#7'Anc'
+  +'hors'#11#5'akTop'#7'akRight'#0#17'BorderSpacing.Top'#2#10#8'TabOrder'#2#1#4
+  +'Text'#6#4'4095'#0#0#6'TLabel'#6'Label3'#21'AnchorSideTop.Control'#7#14'edit'
+  +'Structsize'#18'AnchorSideTop.Side'#7#9'asrCenter'#23'AnchorSideRight.Contro'
+  +'l'#7#14'editStructsize'#4'Left'#2#2#6'Height'#2#15#3'Top'#2'%'#5'Width'#3
+  +#128#0#7'Anchors'#11#5'akTop'#7'akRight'#0#7'Caption'#6#21'Maximum offset va'
+  +'lue:'#11'ParentColor'#8#0#0#7'TButton'#5'btnOk'#21'AnchorSideTop.Control'#7
+  +#14'editStructsize'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight'
+  +'.Control'#7#6'Panel8'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2's'#6
+  +'Height'#2#25#3'Top'#2'='#5'Width'#2'K'#7'Anchors'#11#5'akTop'#7'akRight'#0#8
+  +'AutoSize'#9#17'BorderSpacing.Top'#2#5#7'Caption'#6#2'OK'#20'Constraints.Min'
+  +'Width'#2'K'#7'Default'#9#7'OnClick'#7#10'btnOkClick'#8'TabOrder'#2#2#0#0#0#6
+  +'TPanel'#6'Panel7'#22'AnchorSideLeft.Control'#7#6'Panel8'#19'AnchorSideLeft.'
+  +'Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#6'Panel1'#4'Left'#3#197#0#6
+  +'Height'#2'V'#3'Top'#2#0#5'Width'#3#145#0#8'AutoSize'#9#18'BorderSpacing.Lef'
+  +'t'#2#7#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'V'#11'ClientWidth'#3
+  +#145#0#8'TabOrder'#2#1#0#6'TLabel'#7'Label12'#22'AnchorSideLeft.Control'#7#6
+  +'Panel7'#21'AnchorSideTop.Control'#7#12'editMaxLevel'#18'AnchorSideTop.Side'
+  +#7#9'asrCenter'#23'AnchorSideRight.Control'#7#12'editMaxLevel'#20'AnchorSide'
+  +'Right.Side'#7#9'asrCenter'#4'Left'#2#0#6'Height'#2#15#3'Top'#2'%'#5'Width'#2
+  +'6'#7'Caption'#6#9'Max level'#11'ParentColor'#8#0#0#9'TComboBox'#9'ComboBox1'
+  +#22'AnchorSideLeft.Control'#7#6'Panel7'#21'AnchorSideTop.Control'#7#6'Panel7'
+  +#4'Left'#2#0#6'Height'#2#23#3'Top'#2#0#5'Width'#3#140#0#19'BorderSpacing.Rig'
+  +'ht'#2#5#10'ItemHeight'#2#15#9'ItemIndex'#2#3#13'Items.Strings'#1#6#4'Idle'#6
+  +#6'Lowest'#6#5'Lower'#6#6'Normal'#6#6'Higher'#6#7'Highest'#6#12'TimeCritical'
+  +#0#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#0#4'Text'#6#6'Normal'#0#0#5'T'
+  +'Edit'#12'editMaxLevel'#22'AnchorSideLeft.Control'#7#7'Label12'#19'AnchorSid'
+  +'eLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#9'ComboBox1'#18'Anch'
+  +'orSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#9'ComboBox1'#20
+  +'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2':'#6'Height'#2#23#3'Top'#2'!'
+  +#5'Width'#2'R'#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#18'BorderSpacin'
+  +'g.Left'#2#4#17'BorderSpacing.Top'#2#10#20'Constraints.MinWidth'#2'P'#8'TabO'
+  +'rder'#2#1#4'Text'#6#1'7'#0#0#7'TButton'#9'btnCancel'#22'AnchorSideLeft.Cont'
+  +'rol'#7#6'Panel7'#21'AnchorSideTop.Control'#7#12'editMaxLevel'#18'AnchorSide'
+  +'Top.Side'#7#9'asrBottom'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2#0
+  +#6'Height'#2#25#3'Top'#2'='#5'Width'#2'K'#8'AutoSize'#9#17'BorderSpacing.Top'
+  +#2#5#6'Cancel'#9#7'Caption'#6#6'Cancel'#20'Constraints.MinWidth'#2'K'#11'Mod'
+  +'alResult'#2#2#8'TabOrder'#2#2#0#0#0#0#6'TPanel'#6'Panel9'#22'AnchorSideLeft'
+  +'.Control'#7#6'Panel2'#21'AnchorSideTop.Control'#7#6'Panel3'#18'AnchorSideTo'
+  +'p.Side'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2'o'#3'Top'#3'8'#1#5'Width'#3
+  +'e'#2#8'AutoSize'#9#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'o'#11'Clie'
+  +'ntWidth'#3'e'#2#8'TabOrder'#2#8#0#6'TPanel'#7'Panel10'#4'Left'#2#0#6'Height'
+  +#2'o'#3'Top'#2#0#5'Width'#3#235#0#8'AutoSize'#9#10'BevelOuter'#7#6'bvNone'#12
+  +'ClientHeight'#2'o'#11'ClientWidth'#3#235#0#8'TabOrder'#2#0#0#9'TCheckBox'#19
+  +'cbMustStartWithBase'#22'AnchorSideLeft.Control'#7#7'Panel10'#21'AnchorSideT'
+  +'op.Control'#7#20'edtMaxOffsetsPerNode'#18'AnchorSideTop.Side'#7#9'asrBottom'
+  +#4'Left'#2#0#6'Height'#2#19#4'Hint'#6#239'Will only mark the given range as '
+  +'valid base address (Will reduce the number of results)'#13#10'This internal'
+  +'ly makes use of the "Only find paths with a static address" feature by mark'
+  +'ing the provided range as static only, so it must be enabled.'#3'Top'#2#25#5
+  +'Width'#3#235#0#7'Caption'#6'&Base address must be in specific range'#8'OnCh'
+  +'ange'#7#25'cbMustStartWithBaseChange'#14'ParentShowHint'#8#8'ShowHint'#9#8
+  +'TabOrder'#2#0#0#0#9'TCheckBox'#27'cbMustEndWithSpecificOffset'#22'AnchorSid'
+  ,'eLeft.Control'#7#7'Panel10'#21'AnchorSideTop.Control'#7#7'Panel12'#18'Ancho'
+  +'rSideTop.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#2#19#3'Top'#2'\'#5'Widt'
+  +'h'#3#231#0#7'Caption'#6'''Pointers must end with specific offsets'#8'OnChan'
+  +'ge'#7'!cbMustEndWithSpecificOffsetChange'#8'TabOrder'#2#1#0#0#9'TCheckBox'
+  +#19'cbMaxOffsetsPerNode'#22'AnchorSideLeft.Control'#7#7'Panel10'#21'AnchorSi'
+  +'deTop.Control'#7#20'edtMaxOffsetsPerNode'#18'AnchorSideTop.Side'#7#9'asrCen'
+  +'ter'#4'Left'#2#0#6'Height'#2#19#4'Hint'#12#163#1#0#0'When the pointerscan l'
+  +'ooks through the list of pointers with a specific value, it goes through ev'
+  +'ery single pointer that has that value. Every time increasing the offset sl'
+  +'ightly.'#13#10'With this feature enabled the pointerscan will only check th'
+  +'e first few pointers with that value.'#13#10#13#10'pro: Extremely fast, and'
+  +' the results have the lowest pointer paths possible.'#13#10'con: You''ll mi'
+  +'ss a lot of pointers that might be valid too '#3'Top'#2#4#5'Width'#3#194#0#7
+  +'Caption'#6#31'Max different offsets per node:'#7'Checked'#9#8'OnChange'#7#25
+  +'cbMaxOffsetsPerNodeChange'#14'ParentShowHint'#8#8'ShowHint'#9#5'State'#7#9
+  +'cbChecked'#8'TabOrder'#2#2#0#0#5'TEdit'#20'edtMaxOffsetsPerNode'#22'AnchorS'
+  +'ideLeft.Control'#7#19'cbMaxOffsetsPerNode'#19'AnchorSideLeft.Side'#7#9'asrB'
+  +'ottom'#21'AnchorSideTop.Control'#7#7'Panel10'#4'Left'#3#194#0#6'Height'#2#23
+  +#3'Top'#2#2#5'Width'#2'('#17'BorderSpacing.Top'#2#2#8'TabOrder'#2#3#4'Text'#6
+  +#1'3'#0#0#6'TPanel'#7'Panel12'#22'AnchorSideLeft.Control'#7#7'Panel10'#21'An'
+  +'chorSideTop.Control'#7#19'cbMustStartWithBase'#18'AnchorSideTop.Side'#7#9'a'
+  +'srBottom'#23'AnchorSideRight.Control'#7#19'cbMustStartWithBase'#20'AnchorSi'
+  +'deRight.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#2'0'#3'Top'#2','#5'Width'
+  +#3#215#0#8'AutoSize'#9#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'0'#11'C'
+  +'lientWidth'#3#215#0#8'TabOrder'#2#4#7'Visible'#8#0#5'TEdit'#11'edtBaseFrom'
+  +#22'AnchorSideLeft.Control'#7#6'Label4'#19'AnchorSideLeft.Side'#7#9'asrBotto'
+  +'m'#21'AnchorSideTop.Control'#7#7'Panel12'#23'AnchorSideRight.Control'#7#7'P'
+  +'anel12'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2#29#6'Height'#2#23
+  +#3'Top'#2#0#5'Width'#3#186#0#7'Anchors'#11#5'akTop'#7'akRight'#0#8'TabOrder'
+  +#2#0#0#0#6'TLabel'#6'Label2'#22'AnchorSideLeft.Control'#7#7'Panel12'#21'Anch'
+  +'orSideTop.Control'#7#9'edtBaseTo'#18'AnchorSideTop.Side'#7#9'asrCenter'#23
+  +'AnchorSideRight.Control'#7#9'edtBaseTo'#4'Left'#2#14#6'Height'#2#15#3'Top'#2
+  +#29#5'Width'#2#15#7'Anchors'#11#5'akTop'#7'akRight'#0#7'Caption'#6#2'To'#11
+  +'ParentColor'#8#0#0#6'TLabel'#6'Label4'#22'AnchorSideLeft.Control'#7#7'Panel'
+  +'12'#21'AnchorSideTop.Control'#7#11'edtBaseFrom'#18'AnchorSideTop.Side'#7#9
+  +'asrCenter'#23'AnchorSideRight.Control'#7#11'edtBaseFrom'#4'Left'#2#0#6'Heig'
+  +'ht'#2#15#3'Top'#2#4#5'Width'#2#29#7'Anchors'#11#5'akTop'#7'akRight'#0#7'Cap'
+  +'tion'#6#4'From'#11'ParentColor'#8#0#0#5'TEdit'#9'edtBaseTo'#21'AnchorSideTo'
+  +'p.Control'#7#11'edtBaseFrom'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'Ancho'
+  +'rSideRight.Control'#7#7'Panel12'#20'AnchorSideRight.Side'#7#9'asrBottom'#4
+  +'Left'#2#29#6'Height'#2#23#3'Top'#2#25#5'Width'#3#186#0#7'Anchors'#11#5'akTo'
+  +'p'#7'akRight'#0#17'BorderSpacing.Top'#2#2#8'TabOrder'#2#1#0#0#0#0#6'TPanel'
+  +#7'Panel11'#22'AnchorSideLeft.Control'#7#7'Panel10'#19'AnchorSideLeft.Side'#7
+  +#9'asrBottom'#21'AnchorSideTop.Control'#7#6'Panel9'#4'Left'#3'@'#1#6'Height'
+  +#2'>'#3'Top'#2#0#5'Width'#3'%'#1#8'AutoSize'#9#18'BorderSpacing.Left'#2'U'#10
+  +'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'>'#11'ClientWidth'#3'%'#1#8'TabO'
+  +'rder'#2#1#0#9'TCheckBox'#21'cbAllowRuntimeWorkers'#22'AnchorSideLeft.Contro'
+  +'l'#7#7'Panel11'#21'AnchorSideTop.Control'#7#7'Panel11'#4'Left'#2#0#6'Height'
+  +#2#19#4'Hint'#6'dOpens a port that other systems running the pointerscanner '
+  +'can connect to and help out with the scan'#3'Top'#2#0#5'Width'#3#225#0#7'Ca'
+  +'ption'#6'$Allow scanners to connect at runtime'#8'OnChange'#7#27'cbAllowRun'
+  +'timeWorkersChange'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#0#0#0#6
+  +'TLabel'#7'lblPort'#22'AnchorSideLeft.Control'#7#21'cbAllowRuntimeWorkers'#21
+  +'AnchorSideTop.Control'#7#21'cbAllowRuntimeWorkers'#18'AnchorSideTop.Side'#7
+  +#9'asrBottom'#4'Left'#2#16#6'Height'#2#15#3'Top'#2#24#5'Width'#2#26#18'Borde'
+  +'rSpacing.Left'#2#16#17'BorderSpacing.Top'#2#5#7'Caption'#6#5'Port:'#11'Pare'
+  +'ntColor'#8#0#0#5'TEdit'#18'edtDistributedPort'#22'AnchorSideLeft.Control'#7
+  +#7'lblPort'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'
+  +#7#7'lblPort'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Left'#2'*'#6'Height'#2
+  +#23#3'Top'#2#20#5'Width'#2'g'#7'Enabled'#8#8'TabOrder'#2#1#4'Text'#6#5'52737'
+  +#0#0#5'TEdit'#22'edtDistributedPassword'#22'AnchorSideLeft.Control'#7#6'Labe'
+  +'l1'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#18'e'
+  +'dtDistributedPort'#23'AnchorSideRight.Control'#7#7'Panel11'#20'AnchorSideRi'
+  +'ght.Side'#7#9'asrBottom'#4'Left'#3#208#0#6'Height'#2#23#3'Top'#2#20#5'Width'
+  ,#2'P'#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#18'BorderSpacing.Left'#2
+  +#5#19'BorderSpacing.Right'#2#5#20'Constraints.MinWidth'#2'P'#7'Enabled'#8#9
+  +'MaxLength'#3#255#0#8'TabOrder'#2#2#0#0#6'TLabel'#6'Label1'#22'AnchorSideLef'
+  +'t.Control'#7#18'edtDistributedPort'#19'AnchorSideLeft.Side'#7#9'asrBottom'
+  +#21'AnchorSideTop.Control'#7#18'edtDistributedPort'#18'AnchorSideTop.Side'#7
+  +#9'asrCenter'#4'Left'#3#150#0#6'Height'#2#15#3'Top'#2#24#5'Width'#2'5'#18'Bo'
+  +'rderSpacing.Left'#2#5#7'Caption'#6#8'Password'#11'ParentColor'#8#0#0#9'TChe'
+  +'ckBox'#15'cbConnectToNode'#22'AnchorSideLeft.Control'#7#7'Panel11'#21'Ancho'
+  +'rSideTop.Control'#7#18'edtDistributedPort'#18'AnchorSideTop.Side'#7#9'asrBo'
+  +'ttom'#4'Left'#2#0#6'Height'#2#19#4'Hint'#12#10#1#0#0'When checked will send'
+  +' a broadcast message on the local network which will tell pointer scanner s'
+  +'ystems to join this scan if they are set to auto join'#13#10#13#10'You can '
+  +'use "Setup specific IP''s to notify" to notify systems of this scan that ar'
+  +'e outside of the local network'#3'Top'#2'+'#5'Width'#3#184#0#7'Caption'#6#27
+  +'Connect to pointerscan node'#8'OnChange'#7#21'cbConnectToNodeChange'#14'Par'
+  +'entShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#3#0#0#0#0#11'TOpenDialog'#16'odL'
+  +'oadPointermap'#10'DefaultExt'#6#9'.scandata'#6'Filter'#6':All files (*.*)|*'
+  +'.*|scandata files (*.scandata)|*.scandata'#11'FilterIndex'#2#2#4'left'#3#232
+  +#2#3'top'#3#160#0#0#0#10'TImageList'#2'il'#4'left'#3#208#2#3'top'#3#232#0#6
+  +'Bitmap'#10#14#8#0#0'Li'#2#0#0#0#16#0#0#0#16#0#0#0#255#255#255#0#255#255#255
+  +#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255
+  +#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0'c`'#248#10
+  +#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255
+  +#255#255#0'wt'#255#31'wt'#255'+'#255#255#255#0#255#255#255#0#255#255#255#0
+  +#255#255#255#0#255#255#255#0#255#255#255#0'b_'#248'+]['#247'oYV'#245'>'#255
+  +#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0'wt'#255#31'zw'#255#255
+  +'yv'#254#255'ro'#253'+'#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255
+  +#0'a^'#248'+da'#248#255'jh'#249#255'TQ'#243#168'OM'#242')'#255#255#255#0#255
+  +#255#255#0'wt'#255#31'zw'#255#255#129'~'#255#255#129'~'#254#255'tq'#253#255
+  +'li'#251'+'#255#255#255#0#255#255#255#0'`]'#247'+b_'#248#255'om'#251#255'~|'
+  +#255#255'b_'#248#255'JG'#240'oEB'#238#2#255#255#255#0'vs'#255#8'tq'#254#253
+  +'}z'#254#255#138#135#255#255'|y'#253#255'li'#251#255'ca'#249'+_\'#247'+a^'
+  +#248#255'nl'#250#255'}z'#255#255'a_'#247#255'IF'#240#252'DA'#238#5#255#255
+  +#255#0#255#255#255#0#255#255#255#0'qn'#253#8'nk'#252#252'wt'#253#255#134#130
+  +#255#255'vs'#252#255'db'#248#255'`]'#247#255'mj'#250#255'{y'#255#255'`]'#247
+  +#255'HE'#239#252'CA'#238#8#255#255#255#0#255#255#255#0#255#255#255#0#255#255
+  +#255#0#255#255#255#0'ig'#251#8'fc'#249#252'pm'#251#255#128'~'#255#255'~{'#255
+  +#255'|y'#255#255'yw'#255#255'^\'#247#255'GD'#239#252'B@'#238#8#255#255#255#0
+  +#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255
+  +#255#255#0'a^'#248#8']Z'#246#253'}y'#255#255'^['#255#255'[X'#255#255'vt'#255
+  +#255'FC'#239#253'A?'#237#8#255#255#255#0#255#255#255#0#255#255#255#0#255#255
+  +#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0'\Y'#246'+]['
+  +#247#255'yv'#255#255'YV'#255#255'WT'#255#255'rp'#255#255'HF'#240#255'<9'#235
+  +'+'#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255
+  +#255#255#0#255#255#255#0'[X'#246'+\Z'#246#255'gd'#250#255'tr'#255#255'sp'#255
+  +#255'pn'#255#255'nl'#255#255'WU'#247#255'?='#238#255'20'#232'+'#255#255#255#0
+  +#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0'ZW'#245'+[Y'#246#255
+  +'fc'#250#255'tq'#255#255'ZX'#246#255'CA'#238#252'><'#236#253'PM'#244#255'hg'
+  +#255#255'PN'#245#255'64'#235#255'*'''#229'+'#255#255#255#0#255#255#255#0#255
+  +#255#255#0'YV'#245'+[X'#246#255'eb'#250#255'qp'#255#255'YV'#246#255'B@'#238
+  +#252'>;'#236#8'97'#235#8'52'#233#252'GE'#242#255'cb'#255#255'JH'#244#255'/-'
+  +#233#255'" '#227'+'#255#255#255#0#255#255#255#0'TQ'#243'AXV'#245#255'ca'#250
+  +#255'XU'#246#255'A?'#237#252'=:'#236#8#255#255#255#0#255#255#255#0'0-'#231#8
+  +',*'#230#252'A?'#241#255'LJ'#246#255'1/'#234#255#31#29#226'A'#255#255#255#0
+  +#255#255#255#0#255#255#255#0'JG'#240'AOL'#242#255'@>'#237#253'<9'#235#8#255
+  +#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0'''%'#229#8'$"'#228#252
+  +'1/'#234#255#31#29#226'A'#255#255#255#0#255#255#255#0#255#255#255#0#255#255
+  +#255#0#255#255#255#0'?='#237'A;8'#235#8#255#255#255#0#255#255#255#0#255#255
+  +#255#0#255#255#255#0#255#255#255#0#255#255#255#0'!'#31#227#8#30#28#226'A'#255
+  +#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255
+  +#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0
+  +#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255
+  +#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255
+  +#255#0#255#255#255#0#255#255#255#0#255#255#255#0#234#195#157#255#230#191#150
+  ,#255#228#187#146#255#228#187#146#255#209#160'l'#245#208#158'm'#246#204#150'_'
+  +#218#196'yB~'#178'g<'#9#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255
+  +#0#255#255#255#0#255#255#255#0#255#255#255#0#229#190#150#255#255#255#254#255
+  +#253#243#233#255#253#243#234#255#252#242#232#255#250#239#227#255#250#242#231
+  +#255#234#187#136#255#207#133'U'#179#180'i='#12#255#255#255#0#255#255#255#0
+  +#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#228#187#147#255#254
+  +#245#237#255#252#222#197#255#251#224#199#255#249#220#194#255#245#211#180#255
+  +#254#249#243#255#250#226#196#255#236#193#147#255#195'}H'#147#255#255#255#0
+  +#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#228
+  +#187#146#255#254#246#240#255#252#226#205#255#252#227#205#255#250#223#200#255
+  +#247#217#188#255#245#233#221#255#250#243#235#255#251#248#243#255#202#131'S'
+  +#254#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0
+  +#255#255#255#0#228#187#146#255#254#247#241#255#252#229#210#255#252#228#209
+  +#255#251#226#204#255#249#221#196#255#246#215#187#255#243#209#175#255#250#239
+  +#228#255#204#135'X'#254'4'#180#217#208'^'#194#225#250'`'#195#226#250'`'#195
+  +#226#250'`'#195#226#250'_'#195#226#250#228#187#145#255#255#247#242#255#254
+  +#231#213#255#254#231#213#255#253#229#209#255#250#224#202#255#249#222#196#255
+  +#247#217#188#255#253#242#231#255#204#135'W'#254'6'#179#218#248#253#254#254
+  +#255#254#255#255#255#254#254#255#255#253#254#255#255#254#255#255#255#228#186
+  +#145#255#255#247#240#255#255#231#213#255#253#231#214#255#253#230#212#255#252
+  +#228#208#255#251#227#203#255#250#220#194#255#254#243#232#255#204#134'V'#254
+  +'5'#175#218#240#247#252#254#255#142#228#248#255#145#222#245#255#159#224#245
+  +#255#172#225#246#255#202#132'R'#255#255#247#241#255#255#233#217#255#255#234
+  +#219#255#255#233#217#255#255#231#215#255#255#229#210#255#255#226#203#255#255
+  +#247#241#255#203#133'U'#254'6'#170#218#242#241#250#253#255#148#222#245#255
+  +#147#220#244#255'd'#188#233#255'5'#148#218#255'5'#148#218#255'5'#148#218#255
+  +'5'#148#218#255'5'#148#218#255'5'#148#218#255'5'#148#218#255'5'#148#218#255
+  +'5'#148#218#255#251#246#239#255#204#131'U'#254'5'#171#218#250#232#246#251#255
+  +'p'#188#231#255'U'#170#226#255'M'#165#224#255#145#201#235#255#250#243#239#255
+  +#253#254#253#255#255#253#252#255#255#253#252#255#254#253#252#255#254#252#251
+  +#255#254#254#253#255'5'#148#218#255#239#242#232#255#206#129'V'#255'7'#166#218
+  +#250#254#255#255#255#248#253#255#255#246#253#255#255#245#252#255#255#243#252
+  +#254#255#154#228#244#255#154#230#247#255#155#230#246#255#157#229#245#255#158
+  +#229#245#255#159#229#244#255#218#243#248#255'5'#148#218#255#253#244#238#255
+  +#202#128'T'#249'6'#161#218#249#246#252#254#255#148#229#248#255#147#229#248
+  +#255#147#229#248#255#145#229#248#255#147#219#233#255#147#215#227#255#147#210
+  +#220#255#144#206#215#255#140#200#207#255#134#193#198#255#201#216#214#255'5'
+  +#148#218#255#197'tD'#232#202#127'S'#241'6'#154#218#248#242#250#253#255#148
+  +#230#248#255#146#229#248#255#144#229#248#255#139#227#248#255#134#226#247#255
+  +#127#225#247#255'w'#222#246#255'l'#220#246#255'^'#217#244#255'O'#213#243#255
+  +#204#242#251#255'5'#148#218#255#255#255#255#0#255#255#255#0'5'#148#218#247
+  +#239#250#254#255#147#229#248#255#143#228#248#255#137#227#248#255#130#225#247
+  +#255'z'#223#247#255'q'#222#246#255'g'#219#245#255'['#216#244#255'M'#212#243
+  +#255'@'#209#242#255#202#242#251#255'5'#148#218#255#255#255#255#0#255#255#255
+  +#0'3'#142#217#251#220#240#250#255#152#225#246#255#149#224#246#255#146#223#246
+  +#255#142#222#245#255#137#220#245#255#133#218#244#255#128#217#244#255'z'#215
+  +#243#255't'#213#243#255'p'#211#242#255#194#234#248#255'5'#148#218#255#255#255
+  +#255#0#255#255#255#0','#134#216#0'-'#136#216#247'-'#135#216#247'-'#136#216
+  +#247'-'#136#216#247'-'#136#216#247'-'#136#216#247'-'#136#216#247'-'#136#216
+  +#247'-'#136#216#247'-'#136#216#247'-'#135#216#247'-'#136#216#247','#134#216#0
+  +#255#255#255#0#255#255#255#0#0#0#11'TOpenDialog'#16'odLoadRegionFile'#10'Def'
+  +'aultExt'#6#8'.mregion'#6'Filter'#6'=Memory region files (*.mregion)|*.mregi'
+  +'on|All files (*.*)|*.*'#4'left'#3#232#2#3'top'#3'p'#1#0#0#0
+]);
